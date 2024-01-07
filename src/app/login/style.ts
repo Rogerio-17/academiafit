@@ -2,9 +2,9 @@
 
 import styled from 'styled-components';
 
-export const LoginContainer = styled.div`
+export const LoginContainer = styled.form`
   width: 23rem;
-  height: 26rem;
+  height: 24rem;
   margin: auto;
   margin-top: 4rem;
   background: ${({ theme }) => theme['gray-300']};
@@ -14,6 +14,15 @@ export const LoginContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  button {
+    margin-top: 2rem;
+    width: 20rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 `;
 
 export const InputConateiner = styled.div`

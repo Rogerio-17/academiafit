@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Logo from '../../../public/logo.png';
 import { ImageContainer, InputConateiner, LoginContainer } from './style';
+import Button from '../components/Button';
 
 export default function Login() {
   return (
@@ -17,7 +18,7 @@ export default function Login() {
         <input type="text" />
       </InputConateiner>
 
-      {/*!!!!!!!!!!!!cria o componente de botão!!!!!!!!!!!!!!!!!!!!!!*/}
+      <Button content="Logar"></Button>
     </LoginContainer>
   );
 }
