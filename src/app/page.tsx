@@ -1,10 +1,26 @@
-import Link from 'next/link';
+'use client';
+import Button from './components/Button';
+import Header from './components/Header';
+import { FormContainer, MainContainer } from './style';
 
 export default function Home() {
   return (
     <div>
-      <h1>Home page</h1>
-      <Link href="/login">Login</Link>
+      <Header></Header>
+
+      <MainContainer>
+        <FormContainer>
+          <div>
+            <select name="filtros" id="">
+              <option value="name">Filtrar</option>
+              <option value="name">Nome</option>
+              <option value="codigo">Codigo</option>
+            </select>
+            <input type="text" />
+          </div>
+          <Button content="Buscar"></Button>
+        </FormContainer>
+      </MainContainer>
     </div>
   );
 }

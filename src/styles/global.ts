@@ -18,7 +18,11 @@ body {
 body, input, textarea, button {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1rem; 
+}
+
+a {
+    text-decoration: none;
 }
 
  ::-webkit-scrollbar {

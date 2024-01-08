@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const ButtonContainer = styled.button`
   padding: 0.5rem;
   background-color: ${({ theme }) => theme.red};
-  border-radius: 8rem;
+  border-radius: 8px;
   color: ${({ theme }) => theme.white};
   cursor: pointer;
 
