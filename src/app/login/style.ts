@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 export const LoginContainer = styled.form`
   width: 23rem;
-  height: 24rem;
   margin: auto;
   margin-top: 4rem;
   background: ${({ theme }) => theme['gray-300']};
@@ -17,6 +16,7 @@ export const LoginContainer = styled.form`
 
   button {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 20rem;
 
     &:hover {
@@ -35,6 +35,18 @@ export const InputConateiner = styled.div`
     padding: 0.6rem;
     margin-top: 0.5rem;
     border-radius: 8px;
+    border: 1px solid transparent;
+
+    &:focus {
+      outline: none;
+      border: 1px solid ${({ theme }) => theme.red};
+    }
+  }
+
+  p {
+    color: ${({ theme }) => theme.red};
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
   }
 `;
 
