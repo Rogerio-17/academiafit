@@ -4,6 +4,7 @@ export const MainContainer = styled.main`
   width: 180vh;
   margin: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
@@ -11,6 +12,7 @@ export const MainContainer = styled.main`
 export const FormContainer = styled.main`
   width: 130vh;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: row;
   align-items: center;

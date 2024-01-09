@@ -1,6 +1,7 @@
 'use client';
 import Button from './components/Button';
 import Header from './components/Header';
+import Table from './components/Table';
 import { FormContainer, MainContainer } from './style';
 
 export default function Home() {
@@ -20,6 +21,8 @@ export default function Home() {
           </div>
           <Button content="Buscar"></Button>
         </FormContainer>
+
+        <Table></Table>
       </MainContainer>
     </div>
   );
