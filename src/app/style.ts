@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.main`
-  width: 180vh;
+  width: 1080px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@ export const FormContainer = styled.main`
   gap: 1rem;
 
   input {
-    width: 35rem;
+    width: 80vh;
     border-radius: 0px 8px 8px 0px;
     border: none;
     outline: none;
