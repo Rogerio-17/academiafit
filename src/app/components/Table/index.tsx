@@ -1,5 +1,6 @@
 'use client';
 import { TBodyContainer, THeaderConatiner, TableConatiner } from './style';
+import { CalcMaturity, FormateDate, priceFormater } from '../../utils/fomatter';
 
 interface TableProps {
   Theader: {
@@ -31,14 +32,15 @@ export default function Table({ Theader, alunos }: TableProps) {
 
       <TBodyContainer>
         {alunos.map((aluno) => {
+          const date: string = String(aluno.created);
           return (
             <tr key={aluno.id}>
               <td>{aluno.id}</td>
               <td>{aluno.name}</td>
               <td>{aluno.status}</td>
-              <td>{aluno.valor}</td>
-              <td>{aluno.created}</td>
-              <td>{aluno.created}</td>
+              <td>{priceFormater.format(String(aluno.valor / 100))}</td>
+              <td>{FormateDate(CalcMaturity(date))}</td>
+              <td>{FormateDate(aluno.created)}</td>
             </tr>
           );
         })}

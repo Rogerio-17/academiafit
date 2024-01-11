@@ -18,7 +18,7 @@ export default function Home() {
       name: 'Rogerio Jose',
       status: 'Ativo',
       valor: '4500',
-      created: '12/07/2021'
+      created: 'Wed Jan 10 2024 21:08:58 GMT-0300'
     },
 
     {
@@ -26,7 +26,7 @@ export default function Home() {
       name: 'Jennyfer',
       status: 'Cancelado',
       valor: '8500',
-      created: '12/09/2021'
+      created: 'Wed Jan 10 2024 21:08:58 GMT-0300'
     }
   ];
   return (
